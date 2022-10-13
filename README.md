@@ -2,11 +2,14 @@
 React project
 
 Usage:
+<br>
 download in your folder,
-open with vs code or another program with terminal
-type:
-npm install -g serve
+open with vs code or another program with terminal type:
+<br>
+``npm install -g serve``
+<br>
 then type:
-serve -s build
-
+<br>
+``serve -s build``
+<br>
 and your server is working
