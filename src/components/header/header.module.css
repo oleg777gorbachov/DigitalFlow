@@ -1,0 +1,40 @@
+.container {
+  padding: 10px 0px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  gap: 20px;
+}
+
+.logo {
+  width: 100%;
+  max-width: 215px;
+}
+
+.burger {
+  display: flex;
+  gap: 7px;
+  flex-direction: column;
+  align-items: flex-end;
+  cursor: pointer;
+}
+
+.line {
+  width: 30px;
+  height: 3px;
+  border-radius: 10px;
+  background-color: #212733;
+}
+
+.line_third {
+  width: 16px;
+}
+.line_second {
+  width: 22px;
+}
+
+

@@ -1,0 +1,146 @@
+.div {
+  padding: 17px 0;
+  width: 18%;
+  margin-top: -20px;
+}
+
+.a {
+  text-decoration: none;
+  position: relative;
+  color: black;
+  padding: 16px 80px 16px 20px;
+  border: 1px solid black;
+  transition: all 0.2s;
+  display: inline-flex;
+}
+
+.aWhite {
+  color: white;
+  border: 1px solid white;
+  width: 33%;
+}
+
+.aWhite:hover {
+  color: white;
+}
+
+@media screen and (max-width: 968px) {
+  .div {
+    width: 23%;
+  }
+}
+
+.aWhite::after {
+  background-color: white !important;
+}
+
+.aWhite::before {
+  background-color: white !important;
+}
+
+@media screen and (max-width: 768px) {
+  .centered {
+    text-align: center;
+  }
+  .div {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .div {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 448px) {
+  .div {
+    width: 80%;
+    height: 183px;
+    margin: 0 auto;
+  }
+  .aWhite {
+    top: 50%;
+    transform: translate(0%, -50%);
+  }
+}
+
+a:hover {
+  animation: croop 0.8s;
+  border-radius: 6px;
+  color: #191a1e;
+}
+
+a:hover::after {
+  animation: bouncingAfter 1.2s;
+}
+
+a:hover::before {
+  animation: bouncingBefore 1.2s;
+}
+
+.a::after {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  content: "";
+  width: 12px;
+  height: 3px;
+  border-radius: 12px;
+  transform: translate(0, 4px) rotate(-45deg);
+  background-color: black;
+}
+
+.a::before {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  content: "";
+  width: 12px;
+  height: 3px;
+  border-radius: 12px;
+  transform: translate(0px, -3px) rotate(45deg);
+  background-color: black;
+}
+
+@keyframes bouncingAfter {
+  0% {
+    transform: translate(0px, 4px) rotate(-45deg);
+  }
+  30% {
+    transform: translate(-7px, 4px) rotate(-45deg);
+  }
+  70% {
+    transform: translate(5px, 4px) rotate(-45deg);
+  }
+  100% {
+    transform: translate(0px, 4px) rotate(-45deg);
+  }
+}
+
+@keyframes bouncingBefore {
+  0% {
+    transform: translate(0px, -3px) rotate(45deg);
+  }
+  30% {
+    transform: translate(-7px, -3px) rotate(45deg);
+  }
+  70% {
+    transform: translate(5px, -3px) rotate(45deg);
+  }
+  100% {
+    transform: translate(0px, -3px) rotate(45deg);
+  }
+}
+
+@keyframes croop {
+  0% {
+    border-radius: 0px;
+  }
+  50% {
+    border-radius: 8px;
+  }
+  100% {
+    border-radius: 6px;
+  }
+}

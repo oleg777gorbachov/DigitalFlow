@@ -1,0 +1,100 @@
+nav {
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  min-height: 100vh;
+  box-sizing: border-box;
+  background-color: #191a1e;
+  padding: 40px 100px 40px 50px;
+  z-index: 2;
+}
+
+@media screen and (max-width: 356px) {
+  nav {
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+nav ul {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 40px;
+}
+
+li {
+  color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+}
+
+.link {
+  transition: all 0.2s;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.link:hover {
+  color: white;
+}
+
+.active {
+  animation: menu 0.3s;
+  display: initial;
+}
+
+.unactive {
+  transition: all 0.2s;
+  animation: menuHide 0.3s;
+  transform: translate(100%, 0%);
+}
+
+@keyframes menuHide {
+  0% {
+    transform: translate(0%, 0%);
+  }
+  100% {
+    transform: translate(100%, 0%);
+  }
+}
+
+@keyframes menu {
+  0% {
+    transform: translate(100%, 0%);
+  }
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+
+.crosline {
+  top: 15px;
+  left: 0px;
+  width: 30px;
+  height: 3px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  transition: all 0.2s;
+}
+
+.croslinefirst {
+  transform: rotate(45deg);
+}
+.croslinesecond {
+  transform: rotate(-45deg);
+}
+
+.cros {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  margin-bottom: 70px;
+}
+
+.cros:hover .crosline {
+  background-color: white;
+}

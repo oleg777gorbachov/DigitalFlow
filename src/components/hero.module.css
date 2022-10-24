@@ -1,0 +1,34 @@
+.Header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  text-align: center;
+}
+
+.title {
+  font-size: 74px;
+  text-transform: uppercase;
+  color: #212733;
+  margin-bottom: 20px;
+  font-weight: 400;
+  word-break: break-word;
+}
+
+@media screen and (max-width: 564px) {
+  .title {
+    font-size: 54px;
+  }
+}
+.subtext {
+  color: black;
+  margin-bottom: 100px;
+}
+
+.hero {
+  margin-top: 200px;
+  min-height: 100vh;
+}
