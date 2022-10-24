@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -85,4 +84,3 @@ then type:
 ``serve -s build``
 <br>
 and your server is working
->>>>>>> ed6e6b93c0eebacf8b5b0f648ca345cf68341a7c
